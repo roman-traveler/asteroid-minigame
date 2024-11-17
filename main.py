@@ -21,7 +21,7 @@ def main():
     player=Player(constants.SCREEN_WIDTH/2, constants.SCREEN_HEIGHT/2)
     ast_field=AsteroidField()
     screen = pygame.display.set_mode((constants.SCREEN_WIDTH,constants.SCREEN_HEIGHT))
- 
+    pygame.display.set_caption("Asteroid Prototype")
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
